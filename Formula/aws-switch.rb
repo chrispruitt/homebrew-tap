@@ -5,29 +5,29 @@
 class AwsSwitch < Formula
   desc ""
   homepage "https://github.com/chrispruitt/aws-switch"
-  version "0.1.0"
+  version "0.2.0"
   license "Mozilla Public License Version 2.0"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/chrispruitt/aws-switch/releases/download/v0.1.0/aws-switch_0.1.0_Darwin_x86_64.tar.gz"
-      sha256 "a83aeace68fd4fed102286efc914e3c139ce7eaf56f37a74a6e0070210374c13"
+      url "https://github.com/chrispruitt/aws-switch/releases/download/v0.2.0/aws-switch_0.2.0_Darwin_x86_64.tar.gz"
+      sha256 "2919099236e5a2b114b17f4e7a9bb0ef5271adf61c50fc5c8c7a59903877bbc2"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/chrispruitt/aws-switch/releases/download/v0.1.0/aws-switch_0.1.0_Darwin_arm64.tar.gz"
-      sha256 "6154525bddee047369c3a047b5325d4653d73dd4d6eda6f0a5f4906b48349e19"
+      url "https://github.com/chrispruitt/aws-switch/releases/download/v0.2.0/aws-switch_0.2.0_Darwin_arm64.tar.gz"
+      sha256 "4ae632d264c89d4e2040976aeaacf74e1649178ca23ef3d4afa9d20bef7a3ef8"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/chrispruitt/aws-switch/releases/download/v0.1.0/aws-switch_0.1.0_Linux_x86_64.tar.gz"
-      sha256 "1085a801ab5021f4bab3b037a4a699d627d78475dac002628cf9a394322f7c5c"
+      url "https://github.com/chrispruitt/aws-switch/releases/download/v0.2.0/aws-switch_0.2.0_Linux_x86_64.tar.gz"
+      sha256 "38a4038d567630066d06f0925cbd91096a531d556c3d474f3bec8bb141498c0c"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chrispruitt/aws-switch/releases/download/v0.1.0/aws-switch_0.1.0_Linux_arm64.tar.gz"
-      sha256 "b29cf0509dc4087e0a4238b406ee2ec7f3a227ffd95426783ad2b3d5d8a84ff0"
+      url "https://github.com/chrispruitt/aws-switch/releases/download/v0.2.0/aws-switch_0.2.0_Linux_arm64.tar.gz"
+      sha256 "1ce5278b325d06b6b5dc55f6872d29137f117facf56e1ff8e3e7cea902e245e1"
     end
   end
 
