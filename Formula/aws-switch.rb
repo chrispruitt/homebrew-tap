@@ -5,21 +5,21 @@
 class AwsSwitch < Formula
   desc ""
   homepage "https://github.com/chrispruitt/aws-switch"
-  version "0.2.1"
+  version "0.3.0"
   license "Mozilla Public License Version 2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/chrispruitt/aws-switch/releases/download/v0.2.1/aws-switch_0.2.1_Darwin_arm64.tar.gz"
-      sha256 "3f05bf90e32a9cba3918ec09334740b88940b624ab296d9b9f355022f6856d7c"
+      url "https://github.com/chrispruitt/aws-switch/releases/download/v0.3.0/aws-switch_0.3.0_Darwin_arm64.tar.gz"
+      sha256 "47563f69310d96f3be42be940179b67aabea3344af63f4b49185051fc5ccd315"
 
       def install
         bin.install "aws-switch"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/chrispruitt/aws-switch/releases/download/v0.2.1/aws-switch_0.2.1_Darwin_x86_64.tar.gz"
-      sha256 "da4eace8c8c8b5ea3444ecd96d32406c91efc3f3c3ce69de3700f093ac44f6a4"
+      url "https://github.com/chrispruitt/aws-switch/releases/download/v0.3.0/aws-switch_0.3.0_Darwin_x86_64.tar.gz"
+      sha256 "ce5f2f80ba0e49df5df03e7ca50862c960c2078a60b1bc0500f09c1686c73a9c"
 
       def install
         bin.install "aws-switch"
@@ -29,16 +29,16 @@ class AwsSwitch < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chrispruitt/aws-switch/releases/download/v0.2.1/aws-switch_0.2.1_Linux_arm64.tar.gz"
-      sha256 "7f467d776a0a62cc9233a62261dd2d42c3ceabe1f50c08a67bb7932ba93652f9"
+      url "https://github.com/chrispruitt/aws-switch/releases/download/v0.3.0/aws-switch_0.3.0_Linux_arm64.tar.gz"
+      sha256 "ccc3bdc613745804d2b94bc502887d51bd5e9887c16f18e7f62678933c31d3cf"
 
       def install
         bin.install "aws-switch"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/chrispruitt/aws-switch/releases/download/v0.2.1/aws-switch_0.2.1_Linux_x86_64.tar.gz"
-      sha256 "10b47a5c0b5cfd2490ef0d6a5f25ae30a940107e25c2133c503472fb3679bdc9"
+      url "https://github.com/chrispruitt/aws-switch/releases/download/v0.3.0/aws-switch_0.3.0_Linux_x86_64.tar.gz"
+      sha256 "ac3f95bb99c9d2887fb42a44b02e3f5521b23519f9c69cb19685c0e383074de5"
 
       def install
         bin.install "aws-switch"
