@@ -11,7 +11,7 @@ class Ecs < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/justmiles/ecs-cli/releases/download/v0.0.21/ecs_0.0.21_Darwin_arm64.tar.gz"
-      sha256 "c50065e8fa13431349acd017b60933843cbf96ba53f7175b6b62dbd404d83ae7"
+      sha256 "ada786d71d1522b6cce4d969dbcc0d1c6d40718e04829e8ca3430a26c3c5a53c"
 
       def install
         bin.install "ecs"
@@ -19,7 +19,7 @@ class Ecs < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/justmiles/ecs-cli/releases/download/v0.0.21/ecs_0.0.21_Darwin_x86_64.tar.gz"
-      sha256 "703fa9b61d1b48cd452bbcd21713c0a82632bd62be76449360a5fab911a089b7"
+      sha256 "f1b442398e17ee9505179142da759dae06a7254cd2dc2fb6244117d8d2571845"
 
       def install
         bin.install "ecs"
@@ -30,7 +30,7 @@ class Ecs < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/justmiles/ecs-cli/releases/download/v0.0.21/ecs_0.0.21_Linux_arm64.tar.gz"
-      sha256 "8761c847d162fd4f2696add7463fca6ad5c4369c146f368b3de531815590fdec"
+      sha256 "b963cae8cb71d9a70df144c9997d446485a27e201696fe1d69710e71c7e7be3e"
 
       def install
         bin.install "ecs"
@@ -38,7 +38,7 @@ class Ecs < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/justmiles/ecs-cli/releases/download/v0.0.21/ecs_0.0.21_Linux_x86_64.tar.gz"
-      sha256 "cde83eac2fdaf58b5d478a929e9df855437f581226476f45ed2120865e574659"
+      sha256 "73610da066c2874b3878d0646e26ff7433fa7797b360c7e06c0280e3933a1726"
 
       def install
         bin.install "ecs"
