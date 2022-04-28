@@ -5,21 +5,21 @@
 class Ecs < Formula
   desc ""
   homepage "https://github.com/justmiles/ecs-cli"
-  version "0.1.2"
+  version "0.1.3"
   license "Mozilla Public License Version 2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/justmiles/ecs-cli/releases/download/v0.1.2/ecs_0.1.2_Darwin_arm64.tar.gz"
-      sha256 "f7fefa38e61db65b185588fc21769f93e1916b66a1bf539362b37cad4bd39d5b"
+      url "https://github.com/justmiles/ecs-cli/releases/download/v0.1.3/ecs_0.1.3_Darwin_arm64.tar.gz"
+      sha256 "828fd5d14cd58a893c76d23a8e583fcff7a4966316491be482ecd16fb0ef2de3"
 
       def install
         bin.install "ecs"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/justmiles/ecs-cli/releases/download/v0.1.2/ecs_0.1.2_Darwin_x86_64.tar.gz"
-      sha256 "b1a8dd10775d77bb0f46afa938ffbac4a620ee1e5a7925a461b55e99f124a8a3"
+      url "https://github.com/justmiles/ecs-cli/releases/download/v0.1.3/ecs_0.1.3_Darwin_x86_64.tar.gz"
+      sha256 "d17907350487f50b8227b84299e772b00c7544ec6fdce906723317a730e30b21"
 
       def install
         bin.install "ecs"
@@ -29,16 +29,16 @@ class Ecs < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/justmiles/ecs-cli/releases/download/v0.1.2/ecs_0.1.2_Linux_arm64.tar.gz"
-      sha256 "1c4605b98deef3db4004e862b05b06cdf23c972864a100ed9d65f56a3f95c403"
+      url "https://github.com/justmiles/ecs-cli/releases/download/v0.1.3/ecs_0.1.3_Linux_arm64.tar.gz"
+      sha256 "55d19c84d771e2e00c272d3c3fb6eb349985411c7480e9aff68c2f310250384c"
 
       def install
         bin.install "ecs"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/justmiles/ecs-cli/releases/download/v0.1.2/ecs_0.1.2_Linux_x86_64.tar.gz"
-      sha256 "e60d20fbc33389ec82aa9a8e2d149321d88700d63b8aefbebd2d458f69af671a"
+      url "https://github.com/justmiles/ecs-cli/releases/download/v0.1.3/ecs_0.1.3_Linux_x86_64.tar.gz"
+      sha256 "b4dce126756c596b6d323274f87c57ad80086fec39bdbf70c15014484c800ca0"
 
       def install
         bin.install "ecs"
