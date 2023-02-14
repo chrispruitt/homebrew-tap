@@ -5,21 +5,21 @@
 class EcsDeploy < Formula
   desc ""
   homepage "https://github.com/justmiles/ecs-deploy"
-  version "0.7.2"
+  version "0.7.1"
   license "Mozilla Public License Version 2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/justmiles/ecs-deploy/releases/download/v0.7.2/ecs-deploy_0.7.2_Darwin_arm64.tar.gz"
-      sha256 "3656697b535e8e2481db0e459a2e7daf70955c23988b7bd104bb00333b014459"
+      url "https://github.com/justmiles/ecs-deploy/releases/download/v0.7.1/ecs-deploy_0.7.1_Darwin_arm64.tar.gz"
+      sha256 "9b076f1ad2d2cc3c50238f4febcff4f28e05302864acaa41453726ca28dc209d"
 
       def install
         bin.install "ecs-deploy"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/justmiles/ecs-deploy/releases/download/v0.7.2/ecs-deploy_0.7.2_Darwin_x86_64.tar.gz"
-      sha256 "325d3f0ca9bb2ea4af6a3d377ae420975179e1b7aa4ec9e71ab2626937ac698f"
+      url "https://github.com/justmiles/ecs-deploy/releases/download/v0.7.1/ecs-deploy_0.7.1_Darwin_x86_64.tar.gz"
+      sha256 "ecef062c77552d849f8f69c1b6c640b3fc0ccbe8e015866f17c5836113460076"
 
       def install
         bin.install "ecs-deploy"
@@ -29,16 +29,16 @@ class EcsDeploy < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/justmiles/ecs-deploy/releases/download/v0.7.2/ecs-deploy_0.7.2_Linux_arm64.tar.gz"
-      sha256 "d27c4bf9a5414a44c4a16f14f7748fd010a8871fca846241022ba9dc2c84218d"
+      url "https://github.com/justmiles/ecs-deploy/releases/download/v0.7.1/ecs-deploy_0.7.1_Linux_arm64.tar.gz"
+      sha256 "ae598885fe22f47f8c69ed044744f2b4c8b7b525ea894006f4fca80a5af578dd"
 
       def install
         bin.install "ecs-deploy"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/justmiles/ecs-deploy/releases/download/v0.7.2/ecs-deploy_0.7.2_Linux_x86_64.tar.gz"
-      sha256 "33834b2c47a6f1c2bc22b0460e4e4861eaa7e82ca9e79fa717870311441f9675"
+      url "https://github.com/justmiles/ecs-deploy/releases/download/v0.7.1/ecs-deploy_0.7.1_Linux_x86_64.tar.gz"
+      sha256 "18481ec40ac69f23a7b254e11645976213ab9e496d17d030ca86fc2d7fe7e682"
 
       def install
         bin.install "ecs-deploy"
