@@ -11,7 +11,7 @@ class EcsDeploy < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/justmiles/ecs-deploy/releases/download/v0.7.3/ecs-deploy_0.7.3_Darwin_arm64.tar.gz"
-      sha256 "2c1158b4ece0148faf6289581e9b0beb61262760e2a20dcc33976f3ce2ee890a"
+      sha256 "ccaab32b8f8cecddd2cc94b37bd1c68de991b17c909a2d0796bd8e2e4714d8f5"
 
       def install
         bin.install "ecs-deploy"
@@ -19,7 +19,7 @@ class EcsDeploy < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/justmiles/ecs-deploy/releases/download/v0.7.3/ecs-deploy_0.7.3_Darwin_x86_64.tar.gz"
-      sha256 "934057b6710da4f8ac956b62dd273c6615c4abac5be67340b8057b0e6d0c5e56"
+      sha256 "c79c6e266ca33d6c987a9271a11836284d3b6c7dc05e1fd8075f054d8cc8a518"
 
       def install
         bin.install "ecs-deploy"
@@ -30,7 +30,7 @@ class EcsDeploy < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/justmiles/ecs-deploy/releases/download/v0.7.3/ecs-deploy_0.7.3_Linux_arm64.tar.gz"
-      sha256 "4b639c6293557c08dcc43e7182324e5dceb16d047d2ce126eb9657ad020fb90d"
+      sha256 "b578ea12107621ec85adc7876950e9dc8f3365d09346a9e3778df63244aa181d"
 
       def install
         bin.install "ecs-deploy"
@@ -38,7 +38,7 @@ class EcsDeploy < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/justmiles/ecs-deploy/releases/download/v0.7.3/ecs-deploy_0.7.3_Linux_x86_64.tar.gz"
-      sha256 "26d559bb2b54f44632380ffb0a14dbdff3b292cb88da7faf2d4439964d685d95"
+      sha256 "52fe23c9343261387f4132592ce3be0d85dcf251b8f0f89f6b6d63adf779fc4c"
 
       def install
         bin.install "ecs-deploy"
